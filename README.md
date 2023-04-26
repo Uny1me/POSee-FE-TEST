@@ -1,38 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# POSee Test App
 
-## Getting Started
+POSee Test App is a sample frontend app built with Tailwind CSS, Material-UI, Next.js, and TypeScript. It's designed to display products and provide a detailed product page with a search functionality.
 
-First, run the development server:
+## Installation
+
+1. Clone the repository from GitHub:
+
+```bash
+git clone https://github.com/your-username/POSee-Test-App.git
+```
+
+2. Navigate into the project directory:
+
+```bash
+cd POSee-Test-App
+```
+
+3. Install the project dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Displays a list of products on the homepage with their name, image, and price
+- Provides a detailed product page with additional information about each product
+- Offers search functionality that allows users to search for specific products by name
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Technologies Used
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [Material-UI](https://material-ui.com/) - A React UI framework that implements Google's Material Design.
+- [Next.js](https://nextjs.org/) - A React framework for server-side rendering, static site generation, and more.
+- [TypeScript](https://www.typescriptlang.org/) - A statically typed superset of JavaScript.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Project Structure
 
-## Learn More
+- `pages/` - Contains the Next.js pages for the app.
+- `components/` - Contains the shared components used throughout the app.
+- `styles/` - Contains the Tailwind CSS styles for the app.
+- `public/` - Contains the static assets used in the app.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions are welcome! To contribute to POSee Test App, please:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Fork the repository
+2. Create a new branch for your changes
+3. Make your changes and commit them with descriptive commit messages
+4. Push your changes to your forked repository
+5. Open a pull request to the main repository
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

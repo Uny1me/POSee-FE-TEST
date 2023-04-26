@@ -1,0 +1,13 @@
+.card {
+  font-family: "Open Sans", sans-serif !important;
+}
+.card-description {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.price {
+  /* font-weight: 700 !important; */
+  font-size: 18px !important;
+}
