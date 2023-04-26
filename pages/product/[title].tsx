@@ -97,7 +97,7 @@ export default function ProductDetail() {
               component="p"
             >
               <StarBorder />
-              {rating.rate} <small> ({rating.count})</small>
+              {rating.rate} <p> ({rating.count})</p>
             </Typography>
           )}
 
