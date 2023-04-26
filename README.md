@@ -7,7 +7,7 @@ POSee Test App is a sample frontend app built with Tailwind CSS, Material-UI, Ne
 1. Clone the repository from GitHub:
 
 ```bash
-git clone https://github.com/your-username/POSee-Test-App.git
+git clone https://github.com/Uny1me/POSee-Test-App.git
 ```
 
 2. Navigate into the project directory:
