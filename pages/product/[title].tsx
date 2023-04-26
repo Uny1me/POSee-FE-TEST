@@ -22,6 +22,7 @@ import {
   StarsTwoTone,
 } from "@material-ui/icons";
 import Image from "next/image";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   image: {
@@ -46,15 +47,16 @@ export default function ProductDetail() {
 
   return (
     <div className="lg:px-4 px-2 my-2">
-      <Button
-        className={`${classes.addToCartButton}`}
-        variant="contained"
-        color="primary"
-        startIcon={<ArrowBack />}
-        onClick={() => router.push("/")}
-      >
-        Go Back
-      </Button>
+      <Link href="/">
+        <Button
+          className={`${classes.addToCartButton}`}
+          variant="contained"
+          color="primary"
+          startIcon={<ArrowBack />}
+        >
+          Go Back
+        </Button>
+      </Link>
       <div className="flex items-start justify-between flex-col md:flex-row flex-wrap">
         <div className="flex-grow lg:w-1/2 w-full  flex items-center justify-center lg:justify-start">
           <Image
