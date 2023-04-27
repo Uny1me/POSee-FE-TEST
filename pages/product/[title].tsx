@@ -11,24 +11,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-const useStyles = makeStyles((theme) => ({
-  image: {
-    width: "100%",
-    height: "auto",
-    objectFit: "contain",
-  },
-  description: {
-    // marginTop: "2rem",
-  },
-  addToCartButton: {
-    margin: "1rem 2rem",
-    marginLeft: 0,
-  },
-}));
-
 export default function ProductDetail() {
-  const classes = useStyles();
-
   const router = useRouter();
   const { title, price, description, image, rating }: any = router.query;
 
@@ -36,7 +19,7 @@ export default function ProductDetail() {
     <div className="lg:px-4 px-2 my-2">
       <Link href="/">
         <Button
-          className={`${classes.addToCartButton}`}
+          className={`m-3`}
           variant="contained"
           color="primary"
           startIcon={<ArrowBack />}
@@ -70,7 +53,7 @@ export default function ProductDetail() {
             £{price}
           </Typography>
           <Typography
-            className={`${classes.description} primary-color text-xs py-3 font-light`}
+            className={` primary-color text-xs py-3 font-light`}
             variant="subtitle1"
             component="p"
           >
@@ -78,7 +61,7 @@ export default function ProductDetail() {
           </Typography>
           {rating && (
             <Typography
-              className={`${classes.description} primary-color text-xs py-3 font-light`}
+              className={` primary-color text-xs py-3 font-light`}
               variant="subtitle1"
               component="p"
             >
@@ -88,7 +71,7 @@ export default function ProductDetail() {
           )}
 
           <Button
-            className={classes.addToCartButton}
+            className={"m-3"}
             variant="contained"
             color="primary"
             startIcon={<ShoppingCartIcon />}
