@@ -21,19 +21,19 @@ cd POSee-Test-App
 3. Install the project dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 Alternatively, to avoid package conflicts
 
 ```bash
-npm install --legacy-peer-deps
+pnpm install --legacy-peer-deps
 ```
 
 4. Start the development server:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ## Features
