@@ -3,10 +3,11 @@ import { Container, Typography } from "@mui/material";
 import styles from "styles/Main.module.css";
 import CardComponent from "components/CardComponent";
 import axios from "axios";
+import { usePathname } from "next/navigation";
 
 export default function Home({ data, search }: any) {
-
-
+  const page = usePathname();
+  console.log(page);
   return (
     <div
       className={
@@ -14,7 +15,8 @@ export default function Home({ data, search }: any) {
       }
     >
       <Typography
-        variant="h4"
+        variant="h5"
+        // variantMapping={}
         className="font-bold text-black mb-12"
         textTransform={"uppercase"}
       >

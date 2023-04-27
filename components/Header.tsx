@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
+import { useRouter } from "next/router";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -52,7 +53,17 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function Header({ search }: any) {
-  // console.log(search.searchTerm);
+  const router = useRouter();
+
+  const handleKeyPress = (event: any) => {
+    if (event.key === "Enter") {
+      if (router.pathname !== "/") {
+        router.push("/");
+      }
+      setSearchTerm(event.target.value);
+    }
+  };
+
   const { setSearchTerm } = search;
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -83,6 +94,7 @@ export default function Header({ search }: any) {
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
               onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyDown={handleKeyPress}
             />
           </Search>
         </Toolbar>
