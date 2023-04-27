@@ -2,7 +2,7 @@
 
 POSee Test App is a sample frontend app built with Tailwind CSS, Material-UI, Next.js, and TypeScript. It's designed to display products and provide a detailed product page with a search functionality.
 
-Live Preview here:
+Live Preview here: https://p-osee-test-uny1me.vercel.app/
 
 ## Installation
 
