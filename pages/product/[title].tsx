@@ -1,16 +1,3 @@
-// import React from "react";
-
-// type Props = {};
-
-// function Title({}: Props) {
-//   const router = useRouter();
-//   const { title, id } = router.query; // Retrieve the additional data
-
-//   return <div>{title}</div>;
-// }
-
-// export default Title;
-
 import React from "react";
 import { useRouter } from "next/router";
 import { makeStyles } from "@material-ui/core/styles";
@@ -71,15 +58,14 @@ export default function ProductDetail() {
         <div className="flex-grow lg:w-1/2 w-full">
           <Typography
             gutterBottom
-            className="primary-color lg:text-md text-lg"
-            // component=""
-            variant="h4"
+            variant="h5"
+            className={` primary-color font-bold text-xl`}
           >
             {title}
           </Typography>
           <Typography
-            variant="body2"
-            className={` secondary-color font-bold text-xl`}
+            className="secondary-color lg:text-md text-lg"
+            variant="h4"
           >
             £{price}
           </Typography>
