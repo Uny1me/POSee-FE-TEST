@@ -2,6 +2,8 @@
 
 POSee Test App is a sample frontend app built with Tailwind CSS, Material-UI, Next.js, and TypeScript. It's designed to display products and provide a detailed product page with a search functionality.
 
+Live Preview here:
+
 ## Installation
 
 1. Clone the repository from GitHub:
@@ -67,3 +69,19 @@ Contributions are welcome! To contribute to POSee Test App, please:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+<!-- Noteable upgrades -->
+
+@material-ui/core -> @mui/material
+@material-ui/unstyled -> @mui/base
+@material-ui/icons -> @mui/icons-material
+@material-ui/styles -> @mui/styles
+@material-ui/system -> @mui/system
+@material-ui/lab -> @mui/lab
+@material-ui/types -> @mui/types
+@material-ui/styled-engine -> @mui/styled-engine
+@material-ui/styled-engine-sc ->@mui/styled-engine-sc
+@material-ui/private-theming -> @mui/private-theming
+@material-ui/codemod -> @mui/codemod
+@material-ui/docs -> @mui/docs
+@material-ui/envinfo -> @mui/envinfo
