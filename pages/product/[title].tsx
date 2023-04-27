@@ -1,13 +1,13 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Typography, Button, Icon } from "@material-ui/core";
+import { makeStyles } from "@mui/material/styles";
+import { Grid, Typography, Button, Icon } from "@mui/material";
 import {
   ArrowBack,
   ShoppingCart as ShoppingCartIcon,
   StarBorder,
   StarsTwoTone,
-} from "@material-ui/icons";
+} from "@mui/icons-material";
 import Image from "next/image";
 import Link from "next/link";
 
