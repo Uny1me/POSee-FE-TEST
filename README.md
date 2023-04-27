@@ -22,6 +22,12 @@ cd POSee-Test-App
 npm install
 ```
 
+Alternatively, to avoid package conflicts
+
+```bash
+npm install --legacy-peer-deps
+```
+
 4. Start the development server:
 
 ```bash
