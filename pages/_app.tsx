@@ -33,6 +33,7 @@ export default function MyApp(props: MyAppProps) {
     <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <title>POSee App</title>
       </Head>
       <ThemeProvider theme={theme}>
         <Header search={{ searchTerm, setSearchTerm }} />

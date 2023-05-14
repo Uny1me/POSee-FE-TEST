@@ -9,6 +9,9 @@ import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import { useRouter } from "next/router";
+import { Container } from "@mui/system";
+import { Link } from "@mui/material";
+
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -86,17 +89,30 @@ export default function Header({ search }: any) {
           >
             POSEE TEST APP
           </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              onKeyDown={handleKeyPress}
-            />
-          </Search>
+          <Container
+            sx={{
+              flexDirection: "row",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <Link href="/pricing">
+              <Typography sx={{ color: "#fff" }}>PRICING</Typography>
+            </Link>
+
+            <Search>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ "aria-label": "search" }}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                onKeyDown={handleKeyPress}
+              />
+            </Search>
+          </Container>
         </Toolbar>
       </AppBar>
     </Box>
